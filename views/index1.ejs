@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QAGL</title>
+    <link rel="stylesheet" href="/styler.css">
+    <link rel="stylesheet" href="/niru_styles.css">
+    <script src="https://kit.fontawesome.com/c3794a24f6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+   
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"
+    ></script>
+    <script>
+      let cnt = 0;
+
+      setInterval(() => {
+        cnt = (cnt + 1) & 3;
+
+        if (cnt & 1) {
+          if (cnt & 2) {
+            $("#status").text("Failure").attr("class", "status -failure");
+          } else {
+            $("#status").text("Success").attr("class", "status -success");
+          }
+        } else {
+          $("#status").text("Pending").attr("class", "status -pending");
+        }
+      }, 3000);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+      html {
+        font-size: 40px;
+      }
+      body {
+       background-color:white;
+        display: flex;
+        flex-direction: column;
+        font-family: Lato;
+        height: 100%;
+        margin: auto;
+        text-shadow: 0 0px 2px rgba(245, 245, 245, 0.25);
+       
+      }
+      #status {
+        margin-bottom: 1em;
+      }
+      .status {
+        background: #eee;
+        margin-bottom: 0.25em;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .status {
+        position: relative;
+        height: 1em;
+        line-height: 1em;
+        padding: 0.5em;
+        padding-left: 2em;
+        transition: color 500ms;
+      }
+      .status:before,
+      .status:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transition: all 500ms;
+      }
+      .status.-pending {
+        color: #666;
+      }
+      .status.-pending:before,
+      .status.-pending:after {
+        background: #888;
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      .status.-pending:before {
+        width: 0.25em;
+        height: 0.25em;
+        top: 0.5em;
+        left: 0.875em;
+        border-radius: 0.125em;
+        transform-origin: 50% 0.5em;
+      }
+      .status.-pending:after {
+        width: 0.25em;
+        height: 0.25em;
+        top: 1.25em;
+        left: 0.875em;
+        border-radius: 0.125em;
+        transform-origin: 50% -0.25em;
+      }
+      .status.-success {
+        color: #368;
+      }
+      .status.-success:before,
+      .status.-success:after {
+        background: #6cf;
+        border-radius: 0.125em;
+      }
+      .status.-success:before {
+        width: 0.25em;
+        height: 1em;
+        top: 0.5em;
+        left: 0.875em;
+        transform-origin: 50% 0.875em;
+        transform: translate(-0.177em, -0.11em) rotate(0.125turn);
+      }
+      .status.-success:after {
+        width: 0.25em;
+        height: 0.5em;
+        top: 1em;
+        left: 0.875em;
+        transform-origin: 50% 0.375em;
+        transform: translate(-0.177em, -0.11em) rotate(-0.125turn);
+      }
+      .status.-failure {
+        color: #802;
+      }
+      .status.-failure:before,
+      .status.-failure:after {
+        background: #f04;
+        border-radius: 0.125em;
+      }
+      .status.-failure:before {
+        width: 0.25em;
+        height: 1em;
+        top: 0.5em;
+        left: 0.875em;
+        transform: rotate(0.125turn);
+      }
+      .status.-failure:after {
+        width: 0.25em;
+        height: 1em;
+        top: 0.5em;
+        left: 0.875em;
+        transform: rotate(-0.125turn);
+      }
+
+      .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      /* Darker background on mouse-over */
+      .btn:hover {
+        background-color: RoyalBlue;
+      }
+      #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      #customers tr:hover {
+        background-color: #eee;
+      }
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark " style="width: 100%;height: 2cm; ">
+      <div class="txtnav container-fluid" style="color:white;">
+        <button class="navbar-toggler" style="margin-top:-15%;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <img src="/new.png" style="background-size:100%;  width:4%;" alt="logo">
+          <ul class="navbar-nav me-auto">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 0.8cm;">QAGL-Question Answer Generation From Lectures</a>
+          </ul>
+          <form class="d-flex">
+            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <button class="btn btn-outline-success" style="color:white; margin-right: 10;" type="submit">Log Out</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <h3 style="margin-top: 2cm;color: white;text-align: right;">Your submissions</h3>
+
+    <table id="customers" style="height: 100;">
+      <tr style="font-size: 0.8cm;" >
+        <th>Task</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+      <tr style="font-size: 0.6cm;">
+        <td><%=fily%></td>
+        <td>
+          <div class="status -<%=status%>">
+            <%=status[0].toUpperCase() + status.substring(1)%>
+          </div>
+        </td>
+        <td>
+          <% if (status =='success'){ %>
+            <form method="post" action='/download'>    
+          <button type='submit' class="btn"><i class="fa fa-download"></i></button>
+          </form>
+          <% } %>
+          <form method="post" action='/removeEntry' style="margin-top: 0.2cm;">
+          <button type='submit' style="background-color: #f04;" class="btn"><i class="fa fa-trash-o" aria-hidden="true"></i></i></button>
+        </form>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

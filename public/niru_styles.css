@@ -1,0 +1,642 @@
+#title {
+  background-color: #98cbb4;
+}
+.container-fluid.cf {
+  padding: 0;
+}
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+.hd {
+  display: flex;
+}
+body {
+  font-family: "Pattaya", sans-serif;
+}
+header {
+  background-repeat: no-repeat;
+  display: block;
+  background-image: url("/bike.png");
+  background-size: 100%;
+  padding: 35px;
+  height: 500px;
+  text-align: center;
+}
+h3 {
+  color: #16576a;
+}
+a {
+  font-size: 1.5rem;
+  position: relative;
+}
+header a {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  width: 100px;
+  font-size: 20px;
+  margin-right: 150px;
+}
+.help {
+  width: 7%;
+}
+.container-fluid {
+  padding-top: 80px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.feature {
+  text-align: center;
+  padding: 5% 5%;
+  background-color: #98cbb4;
+}
+.sub-feature {
+  padding: 2% 5%;
+  text-align: center;
+}
+p {
+  font-size: 1.2rem;
+  padding: 0 17%;
+  color: #184d47;
+}
+.icon {
+  color: #16576a;
+  padding-bottom: 10%;
+}
+.fixer {
+  color: blue;
+  margin-right: 10px;
+}
+.fas:hover {
+  color: #fff;
+}
+.lambe {
+  width: 200px;
+}
+.input-group {
+  padding: 2%;
+}
+.submit-button {
+  padding: 4%;
+  padding-left: 18%;
+  padding-bottom: 10px;
+  padding-top: 22%;
+  /* padding-left: 100px; */
+}
+.btn {
+  padding-left: 100px;
+}
+.subm {
+  width: 100px;
+  padding-left: 700px;
+}
+.social {
+  padding: 5%;
+  color: #1da1f2;
+}
+.ins {
+  color: pink;
+}
+.social:hover {
+  color: blue;
+}
+.wt {
+  color: #98cbb4;
+}
+.wt:hover {
+  color: #184d47;
+}
+.tb {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+.nav {
+  color: transparent;
+  height: 7vh;
+  color: white;
+}
+.txtnav {
+  padding: 5%;
+  margin: 5%;
+  /* padding-left: 8%; */
+  text-align: center;
+  color: white;
+  text-decoration-color: white;
+}
+.temp {
+  width: 500px;
+}
+.resname {
+  width: 70vw;
+}
+.res {
+  position: relative;
+  padding-top: 8%;
+  padding-left: 20%;
+}
+.rehelp {
+  background-color: #e4efe7;
+  padding-bottom: 5%;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  width: 100%;
+  margin: 0px;
+  /* border-radius:  */
+}
+.intro-text {
+  padding-top: 10%;
+  font-size: 1.7rem;
+}
+.hid {
+  display: none;
+}
+.hd {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/bike.jpg");
+}
+.ctxt {
+  text-align: center;
+  padding: 5%;
+}
+.ccent {
+  text-align: center;
+}
+.bigp {
+  padding: 0;
+  margin: 0;
+}
+.par {
+  background-color: #98cbb4;
+  margin: 0px 0px;
+  width: 100%;
+  padding: 10% 30%;
+}
+
+.cbd {
+  margin: 0;
+}
+.cb {
+  /* width: 600px; */
+  background-color: white;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+.fs {
+  color: #000;
+}
+@media screen and (max-width: 416px) {
+  .mdc {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 354px) {
+  .mdc {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 324px) {
+  .mdc {
+    font-size: 0.78rem;
+  }
+}
+@media screen and (max-width: 289px) {
+  .mdc {
+    font-size: 0.67rem;
+  }
+}
+@media screen and (max-width: 672px) {
+  #title {
+    text-align: center;
+  }
+  .res {
+    position: static;
+    width: 500px;
+    padding-left: 25%;
+  }
+  .submit-button {
+    padding-right: 15%;
+  }
+  .fs {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 544px) {
+  #title {
+    text-align: center;
+  }
+  .res {
+    width: 400px;
+    margin-right: 2%;
+  }
+  .hid {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 4%;
+  }
+  .submit-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 475px) {
+  #title {
+    text-align: center;
+  }
+  .res {
+    padding-left: 50px;
+    width: 325px;
+  }
+  .intro-text {
+    font-size: 1.5rem;
+  }
+  .hid {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 16%;
+    padding-top: 4%;
+  }
+  .fs {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 457px) {
+  #title {
+    text-align: center;
+  }
+  .res {
+    margin: 5%;
+  }
+  .hid {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-left: 6%;
+    padding-top: 4%;
+  }
+  .fs {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  #title {
+    text-align: center;
+  }
+  .res {
+    width: 300px;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+  }
+  .hd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+}
+@media screen and (max-width: 369px) {
+  #title {
+    text-align: center;
+  }
+  .hd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  .res {
+    width: 270px;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  #title {
+    text-align: center;
+  }
+  .hd {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+  .res {
+    width: 270px;
+  }
+  .intro-text {
+    font-size: 1.3rem;
+  }
+}
+$skin: #4db6ac;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to top, #4f6072, #8699aa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//upload component
+.upload {
+  position: relative;
+  width: 400px;
+  min-height: 445px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(black, 0.2);
+  padding-bottom: 20px;
+  background: #fff;
+  animation: fadeup 0.5s 0.5s ease both;
+  transform: translateY(20px);
+  opacity: 0;
+  .upload-files {
+    header {
+      background: $skin;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      p {
+        color: #fff;
+        font-size: 40px;
+        margin: 0;
+        padding: 50px 0;
+        i {
+          transform: translateY(20px);
+          opacity: 0;
+          font-size: 30px;
+          animation: fadeup 0.5s 1s ease both;
+        }
+        .up {
+          font-weight: bold;
+          transform: translateX(-20px);
+          display: inline-block;
+          opacity: 0;
+          animation: faderight 0.5s 1.5s ease both;
+        }
+        .load {
+          display: inline-block;
+          font-weight: 100;
+          margin-left: -8px;
+          transform: translateX(-20px);
+          opacity: 0;
+          animation: faderight 1s 1.5s ease both;
+        }
+      }
+    }
+    .body {
+      text-align: center;
+      padding: 50px 0;
+      padding-bottom: 30px;
+      &.hidden {
+        display: none;
+      }
+      input {
+        visibility: hidden;
+      }
+      i {
+        font-size: 65px;
+        color: lightgray;
+      }
+      p {
+        font-size: 14px;
+        padding-top: 15px;
+        line-height: 1.4;
+        b,
+        a {
+          color: $skin;
+        }
+      }
+      &.active {
+        border: dashed 2px $skin;
+        i {
+          box-shadow: 0 0 0 -3px #fff, 0 0 0 lightgray, 0 0 0 -3px #fff,
+            0 0 0 lightgray;
+          animation: file 0.5s ease both;
+        }
+        @keyframes file {
+          50% {
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray,
+              -8px 8px 0 -3px #fff, -8px 8px 0 lightgray;
+          }
+          75%,
+          100% {
+            box-shadow: -8px 8px 0 -3px #fff, -8px 8px 0 lightgray,
+              -16px 16px 0 -3px #fff, -16px 16px 0 lightgray;
+          }
+        }
+        .pointer-none {
+          pointer-events: none;
+        }
+      }
+    }
+    footer {
+      width: 100%;
+      margin: 0 auto;
+      height: 0;
+      .divider {
+        margin: 0 auto;
+        width: 0;
+        border-top: solid 4px darken($skin, 3.5%);
+        text-align: center;
+        overflow: hidden;
+        transition: width 0.5s ease;
+        span {
+          display: inline-block;
+          transform: translateY(-25px);
+          font-size: 12px;
+          padding-top: 8px;
+        }
+      }
+      &.hasFiles {
+        height: auto;
+        .divider {
+          width: 100%;
+          span {
+            transform: translateY(0);
+            transition: transform 0.5s 0.5s ease;
+          }
+        }
+      }
+      .list-files {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding-left: 5px;
+        text-align: center;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 210px;
+        &::-webkit-scrollbar-track {
+          background-color: rgba(lightgray, 0.25);
+        }
+        &::-webkit-scrollbar {
+          width: 4px;
+          background-color: rgba(lightgray, 0.25);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba($skin, 0.5);
+        }
+        .file {
+          width: 300px;
+          min-height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          opacity: 0;
+          animation: fade 0.35s ease both;
+          .name {
+            font-size: 12px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 80px;
+            text-align: left;
+          }
+          .progress {
+            width: 175px;
+            height: 5px;
+            border: solid 1px lightgray;
+            border-radius: 2px;
+            background: linear-gradient(
+                to left,
+                rgba($skin, 0.2),
+                rgba($skin, 0.8)
+              )
+              no-repeat;
+            background-size: 100% 100%;
+            &.active {
+              animation: progress 30s linear;
+            }
+          }
+
+          @keyframes progress {
+            from {
+              background-size: 0 100%;
+            }
+            to {
+              background-size: 100% 100%;
+            }
+          }
+
+          .done {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background: $skin;
+            border-radius: 50%;
+            margin-left: -10px;
+            transform: scale(0);
+            position: relative;
+            &:before {
+              content: "View";
+              position: absolute;
+              top: 0;
+              left: -5px;
+              font-size: 24px;
+              opacity: 0;
+            }
+            &:hover:before {
+              transition: all 0.25s ease;
+              top: -30px;
+              opacity: 1;
+            }
+            &.anim {
+              animation: done1 0.5s ease forwards;
+              #path {
+                animation: done2 2.5s 0.5s ease forwards;
+              }
+            }
+            #path {
+              stroke-dashoffset: 7387.59423828125;
+              stroke-dasharray: 7387.59423828125 7387.59423828125;
+              stroke: #fff;
+              fill: transparent;
+              stroke-width: 50px;
+            }
+          }
+          @keyframes done2 {
+            to {
+              stroke-dashoffset: 0;
+            }
+          }
+          @keyframes done1 {
+            50% {
+              transform: scale(0.5);
+              opacity: 1;
+            }
+            80% {
+              transform: scale(0.25);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(0.5);
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .importar {
+        outline: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+        border: solid 1px $skin;
+        color: $skin;
+        background: transparent;
+        padding: 8px 15px;
+        font-size: 12px;
+        border-radius: 4px;
+        font-family: Roboto;
+        line-height: 1;
+        cursor: pointer;
+        transform: translateY(15px);
+        opacity: 0;
+        visibility: hidden;
+        margin-left: calc(50% - 40px);
+        &.active {
+          transition: transform 0.5s 1.5s ease, opacity 0.5s 1.5s ease,
+            background;
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+        }
+        &:hover {
+          background: $skin;
+          color: #fff;
+        }
+      }
+    }
+  }
+  @keyframes fadeup {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes faderight {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    to {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 400px) {
+    width: 100%;
+    height: 100%;
+  }
+}

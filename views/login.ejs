@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>QAGL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function ValidateEmail(mail) {
+        if (
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+            mail
+          )
+        ) {
+          return true;
+        }
+        return false;
+      }
+      function validateLoginForm() {
+        var x = document.forms["login"]["username"].value;
+        var y = document.forms["login"]["password"].value;
+        if (x == "" || y == "") {
+          alert("Empty credentials not allowed");
+          return false;
+        }
+        if (!ValidateEmail(x)) {
+          alert("Invalid username");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+    <link rel="stylesheet" href="/style.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form
+            name="login"
+            action="/authenticate"
+            class="sign-in-form"
+            onsubmit="return validateLoginForm()"
+            method="post"
+          >
+            <img
+              src="/logo.png"
+              class="rounded-circle"
+              alt="logo"
+              width="150"
+              height="150"
+            />
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input name="username" type="text" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input name="password" type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <div>
+              <a href="/forgot">Forgot password?</a>
+            </div>
+          </form>
+          <form action="/signup" class="sign-up-form" method="post">
+            <img
+              src="/logo.png"
+              class="rounded-circle"
+              alt="logo"
+              width="100"
+              height="100"
+            />
+            <h2 class="title">Sign Up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input name="name" type="text" placeholder="Name" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input name="gender" type="text" placeholder="Gender" />
+            </div>
+
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input name="phone" type="text" placeholder="Phone Number" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input name="email" type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input name="psw" type="password" placeholder="Password" />
+            </div>
+            <!-- <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input name='pswrepeat' type="password" placeholder="Confirm Password" />
+            </div> -->
+            <input type="submit" class="btn" value="Sign up" />
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              <b>Welcome to QAGL <br /></b>
+              Enter your personal details and start journey with us .
+            </p>
+            <button class="btn transparent" id="sign-up-btn">Register</button>
+          </div>
+          <img src="/stick.png" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              <b>Welcome back to QAGL <br /></b>
+              This site helps you to summarize and generate QnA from video
+              lectures.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">Sign in</button>
+          </div>
+          <img src="/stick1.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -111,7 +111,7 @@ validate the answers.
 
 ## Live link
 
-Link: https://bit.ly/qagl-project
+Link: https://www.youtube.com/watch?v=qf_Bb1jf2f0
 
 ### Contributors
 
